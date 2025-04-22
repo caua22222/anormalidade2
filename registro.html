@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar Anormalidade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastrar Anormalidade</h1>
+    <form action="https://formsubmit.co/hkk809774@gmail.com" method="POST">
+
+      <div class="input-group">
+        <label for="descricao">Descrição da Anormalidade</label>
+        <textarea id="descricao" name="descricao" rows="4" required placeholder="Descreva o que foi encontrado..."></textarea>
+      </div>
+
+      <div class="input-group">
+        <label for="local">Onde ocorreu?</label>
+        <input type="text" id="local" name="local" required placeholder="Ex: Corredor do 2º andar, Oficina A, etc.">
+      </div>
+
+      <div class="input-group">
+        <label for="imagem">Anexar Imagem</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*" capture="environment">
+        <!-- "capture=environment" ativa a câmera direto no celular -->
+      </div>
+
+      <div class="form-actions">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+<!-- EmailJS Lib -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="script.js"></script>
+<script>
+  (function(){
+    emailjs.init("fjKE512Yct_uK01X3");
+  })();
+</script>
+
+</body>
+</html>

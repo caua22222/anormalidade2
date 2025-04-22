@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro</h1>
+    <form action="login.html" method="GET"> <!-- Simula cadastro e redireciona -->
+      <div class="input-group">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" required>
+      </div>
+      <div class="input-group">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" required>
+      </div>
+      <div class="input-group">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" required>
+      </div>
+      <div class="input-group">
+        <label for="senai">Qual SENAI você estuda?</label>
+        <input type="text" name="senai" required>
+      </div>
+      <div class="form-actions">
+        <button type="submit">Cadastrar</button>
+      </div>
+    </form>
+    <p>Já tem uma conta? <a href="login.html">Voltar para o login</a></p>
+  </div>
+</body>
+</html>

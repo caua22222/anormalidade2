@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form action="registro.html" method="GET"> <!-- Redireciona para anormalidade.html após o login -->
+      <div class="input-group">
+        <label for="login">E-mail ou Telefone</label>
+        <input type="text" id="login" name="login" required placeholder="Digite seu e-mail ou telefone">
+      </div>
+      <div class="input-group">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" required>
+      </div>
+      <div class="form-actions">
+        <button type="submit">Entrar</button>
+      </div>
+    </form>
+    <p>Não tem conta? <a href="kadastro.html">Cadastre-se aqui</a></p>
+  </div>
+</body>
+</html>
